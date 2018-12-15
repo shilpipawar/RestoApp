@@ -46,7 +46,7 @@ app.get("/tables", function(req, res) {
 });
 
 // Displays all characters
-app.get("/reservation", function(req, res) {
+app.get("/reservations", function(req, res) {
  // return res.json(characters);
  res.sendFile(path.join(__dirname, "reservation.html"));
 });
