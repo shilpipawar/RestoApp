@@ -1,0 +1,22 @@
+#mainDiv {
+    width: 80%;
+    margin: auto;
+}
+
+#card-head{
+    padding: 5px;
+}
+
+form{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#center {
+    text-align: center;
+}
+
+#links {
+    font-size: 15px;
+}

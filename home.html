@@ -15,41 +15,30 @@
         <link rel = "stylesheet" href = "assets/css/style.css">
 
 </head>
-<body>
-<div id = 'mainDiv' style = 'width: 80%; margin-left: 10%; margin-right: 10%'>
+<body>  
+    <script src = 'assets/javascript/app.js' type = 'text/javascript'></script>
+
+<div id = 'mainDiv'>
 
         <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                    <h1 class="display-4" id = "center">Hot Restaurants!</h1>
-                    <p class="lead" id = "center">Current Reservation</p>
+                    <h1 class="display-4" id = "center">Hot Restaurants</h1>
+                    <p class="lead" id = "center">TEXT</p>
                     <div class = "links" id = "center">
                             <a href="/reservations">
                                 <button type="button" class="btn btn-large btn-danger" id="reservationBtn">Make a Reservation</button>
                             </a>
-                            <a href="/">
-                                <button type="button" class="btn btn-large btn-default" id="tableBtn">Home</button>
+                            <a href="/tables">
+                                <button type="button" class="btn btn-large btn-default" id="tableBtn">View Tables</button>
                             </a>
                     </div>
                 </div>   
             </div>
 
-    <div class = 'card'>
-        <div class = 'card card-top'>Current Reservations</div>
-        <div id = 'tableTable'class = 'card card-body'>
-            <!--Insert Array info here-->
+    <div>
+            <a href = "/api/tables">API Table Link</a> | <a href = "/api/waitlist">API Wait List</a>
         </div>
     </div>
-
-    <br><br>
-    
-    <div class = 'card'>
-        <div class = 'card card-top'>Waiting List</div>
-        <div id = 'waitlistTable' class = 'card card-body'>
-            <!--Insert Array info here-->
-        </div>
-    </div>
-</div>
-        <script src = 'assets/javascript/app.js' type = 'text/javascript'></script>
-
-</body>
-</html>
+        
+    </body>
+    </html>

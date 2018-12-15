@@ -27,10 +27,8 @@ console.log("Name: " + this.Name
 + " Unique Id:" + this.UniqueId)
   }
 };
-
-var customer1 = new Customer("John","j@gmail.com","5555555656", 1);
-customer1.printObj();
-
+// var customer1 = new Customer("John","j@gmail.com","5555555656", 1);
+// customer1.printObj();
 var reservations = [5];
 
 var waitList = [];
@@ -40,17 +38,17 @@ var waitList = [];
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "home.html"));
 });
 
-app.get("/api/tables", function(req, res) {
+app.get("/tables", function(req, res) {
   res.sendFile(path.join(__dirname, "tables.html"));
 });
 
 // Displays all characters
-app.get("/api/reserve", function(req, res) {
+app.get("/reservation", function(req, res) {
  // return res.json(characters);
- res.sendFile(path.join(__dirname, "reserve.html"));
+ res.sendFile(path.join(__dirname, "reservation.html"));
 });
 
 // Displays a single character, or returns false
